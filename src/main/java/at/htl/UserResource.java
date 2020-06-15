@@ -22,4 +22,6 @@ public class UserResource {
     public SecurityIdentity getUserInfo(){
         return this.identity;
     }
+
+
 }
