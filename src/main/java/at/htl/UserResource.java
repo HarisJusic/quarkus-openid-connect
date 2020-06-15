@@ -23,5 +23,10 @@ public class UserResource {
         return this.identity;
     }
 
-
+    @GET
+    @Path("/admins")
+    @RolesAllowed("admins")
+    public String getAdmin(){
+        return "I am admin";
+    }
 }
